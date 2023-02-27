@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--font-awesome link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="step1.css">
+
+    <title>সঞ্চয় একাউন্ট</title>
+  </head>
+  <body>
+    <header>
+        <div class="container header-box bg-danger">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>সঞ্চয় একাউন্ট</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="step">
+        <div class="container step-head py-5">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="step-card">
+                        <div class="cash">
+                          <div class="cash-out me-3">
+                          
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header bg-danger text-white ">
+                                    <h5 class="modal-title mx-auto" id="exampleModalToggleLabel">টাকা উত্তোলন</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body py-5">
+                                    <input type="text" class="form-control py-3 border-danger" placeholder="টাকার পরিমান দিন " aria-label="Username" required>
+                                  </div>
+                                  <div class="modal-footer mx-auto">
+                                    <button type="submit" class="btn btn-lg bg-danger text-white" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">পরবর্তি </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header bg-danger text-white">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel2">পেমেন্ট সিস্টেম</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <button class="btn btn-outline-danger" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="img/logo.png" alt=""></button>
+
+                                    <button class="btn btn-outline-danger px-3 py-4" data-bs-target="#exampleModalToggle11" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="img/logo.a4624c6.svg" alt=""></button>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header pay-img mb-3 py-0 ">
+                                <div class=" pb-1 mb-3 bg-white">
+                                  <img src="img/bkash.jpg" alt="">
+                                </div>
+                                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body bkash-bg text-white py-5">
+                                <h5 class="modal-title mx-auto" id="exampleModalToggleLabel3">বিকাশ একাউন্ট নাম্বার দিন  </h5>
+                                
+                                <input type="text" class="form-control mt-3 py-3" placeholder="একাউন্ট নাম্বার দিন " aria-label="Username" required>
+                              </div>
+                              <div class="modal-footer mx-auto ">
+                                <button type="submit" class="btn btn-lg bkash-bg text-white" data-bs-target="#exampleModalToggle4"  data-bs-toggle="modal" data-bs-dismiss="modal">সাবমিট </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal fade" id="exampleModalToggle11" aria-hidden="true" aria-labelledby="exampleModalToggleLabel11" tabindex="-1">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header pay-img mb-3 py-0 ">
+                                <div class=" pb-1 mb-3 bg-white">
+                                  <img src="img/Nagad.png" alt="">
+                                </div>
+                                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body nagad-bg text-white py-5">
+                                <h5 class="modal-title mx-auto" id="exampleModalToggleLabel11">নগদ  একাউন্ট নাম্বার দিন  </h5>
+                                
+                                <input type="text" class="form-control mt-3 py-3" placeholder="একাউন্ট নাম্বার দিন " aria-label="Username" required>
+                              </div>
+                              <div class="modal-footer mx-auto ">
+                                <button type="submit" class="btn btn-lg  text-white" data-bs-target="#exampleModalToggle4"  data-bs-toggle="modal" data-bs-dismiss="modal" style="background:#e51017 ;">সাবমিট </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                            <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel4" tabindex="-1">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header bg-danger text-white ">
+                                    <h4 class="modal-title" id="exampleModalToggleLabel4">ধন্যবাদ </h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body py-5 text-dark">
+                                    <h5>আপনার লে‌নেদেন যাচাই করা হ‌চ্ছে</h5>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><i class="fa fa-address-card-o fa-2x" aria-hidden="true"></i><br>  টাকা উত্তোলন </a>
+
+
+                          </div>
+
+                          <!-- টাকা উত্তোলন -->
+
+                          <div class="cash-in">
+                            <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel5" tabindex="-1">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header bg-danger text-white ">
+                                    <h5 class="modal-title mx-auto" id="exampleModalToggleLabel5">টাকা জমা  </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body py-5">
+                                    <input type="text" class="form-control py-3 border-danger" placeholder="টাকার পরিমান দিন " aria-label="Username" required>
+                                  </div>
+                                  <div class="modal-footer mx-auto">
+                                    <button class="btn btn-lg bg-danger text-white" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal" data-bs-dismiss="modal">পরবর্তি </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel6" tabindex="-1">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header bg-danger text-white">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel6">পেমেন্ট সিস্টেম</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <button class="btn btn-outline-danger" data-bs-target="#exampleModalToggle7" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="img/logo.png" alt=""></button>
+
+                                    <button class="btn btn-outline-danger px-3 py-4" data-bs-target="#exampleModalToggle9" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="img/logo.a4624c6.svg" alt=""></button>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- bkash payment -->
+
+
+                            <div class="modal fade" id="exampleModalToggle7" aria-hidden="true" aria-labelledby="exampleModalToggleLabel7" tabindex="-1">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header ">
+                                    <h4 class="modal-title text-danger mx-auto" id="exampleModalToggleLabel7">01xxx-xxxxxx নাম্বা‌রে xxx৳ সেন্ড মা‌নি করুন  </h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body bg-danger text-white">
+                                    <div class="pay-img pb-1 mb-3 bg-white">
+                                      <img src="img/bkash.jpg" alt="">
+                                    </div>
+                                    <form action="">
+                                      <label for="" class="fs-5 ">‌Enter the transection ID of your bkash SEND Money </label>
+                                    <input type="text" class="form-control mt-3 py-3" placeholder="Enter bkash Transection ID" aria-label="Username" required>
+                                    </form>
+                                    <div class="list text-start ps-3">
+                                      <ul>
+                                        <li class="mt-2">Go to your bkash Menu by dialing: *247# </li>
+                                        <li class="mt-2">Choose "Send Money" </li>
+                                        <li class="mt-2">Enter the Merchant bkash Account Number <br> 01xxx-xxxxxx</li>
+                                        <li class="mt-2">Enter the Merchant bkash Account Number <br> 01xxx-xxxxxx</li>
+                                        <li class="mt-2">Enter the Amount: 750৳ </li>
+                                        <li class="mt-2">Enter bkash Mobile Menu PIN to confirm</li>
+                                        <li class="mt-2">You will receive a confirmation sms form bkash</li>
+                                        <li class="mt-2">Enter the Transection ID in the upper box and press "verify"</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer mx-auto">
+                                    <button type="submit" class="btn btn-secondary btn-lg" data-bs-target="#exampleModalToggle8"  data-bs-toggle="modal" data-bs-dismiss="modal">VERIFY </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Nagod payment -->
+                            <div class="modal fade" id="exampleModalToggle9" aria-hidden="true" aria-labelledby="exampleModalToggleLabel9" tabindex="-1">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header ">
+                                    <h4 class="modal-title text-danger mx-auto" id="exampleModalToggleLabel9">01xxx-xxxxxx নাম্বা‌রে xxx৳ সেন্ড মা‌নি করুন  </h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body nagad-bg text-white">
+                                    <div class="pay-img pb-1 mb-3 bg-white">
+                                      <img src="img/Nagad.png" alt="">
+                                    </div>
+                                    <form action="">
+                                      <label for="" class="fs-5 ">‌Enter the transection ID of your Nagad SEND Money </label>
+                                    <input type="text" class="form-control mt-3 py-3" placeholder="Enter Nagad Transection ID" aria-label="Username" required>
+                                    </form>
+                                    <div class="list text-start ps-3">
+                                      <ul>
+                                        <li class="mt-2">Go to your Nagad Menu by dialing: *167# </li>
+                                        <li class="mt-2">Choose "Send Money" </li>
+                                        <li class="mt-2">Enter the Merchant Nagad Account Number <br> 01xxx-xxxxxx</li>
+                                        <li class="mt-2">Enter the Merchant Nagad Account Number <br> 01xxx-xxxxxx</li>
+                                        <li class="mt-2">Enter the Amount: 750৳ </li>
+                                        <li class="mt-2">Enter Nagad Mobile Menu PIN to confirm</li>
+                                        <li class="mt-2">You will receive a confirmation sms form Nagad</li>
+                                        <li class="mt-2">Enter the Transection ID in the upper box and press "verify"</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer mx-auto">
+                                    <button type="submit" class="btn btn-secondary btn-lg" data-bs-target="#exampleModalToggle8"  data-bs-toggle="modal" data-bs-dismiss="modal">VERIFY </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModalToggle8" aria-hidden="true" aria-labelledby="exampleModalToggleLabel8" tabindex="-1">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header bg-danger text-white ">
+                                    <h4 class="modal-title" id="exampleModalToggleLabel8">ধন্যবাদ </h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body py-5">
+                                    <h5>আপনার লে‌নেদেন যাচাই করা হ‌চ্ছে</h5>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <a class="btn btn-danger px-4" data-bs-toggle="modal" href="#exampleModalToggle5" role="button"><i class="fa fa-address-card-o fa-2x" aria-hidden="true"></i><br>  টাকা জমা   </a>
+                            
+                            
+                                                      </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer text-white">
+      <div class="container-lg footer bg-danger py-3 rounded-top">
+          <div class="row">
+              <div class="col-3 d-flex align-items-center">
+                  <a href="#" class="ps-3 w-25"><img src="img/dash_logo.jpg" alt=""></a>
+              </div>
+              <div class="col-5">
+                <div class="social">
+                  <div class="help text-white">
+                    <h4 class="d-inline">হেল্প লাইন</h4>
+                    <p class="d-inline">(১০:০০-০৮:০০)</p>
+                  </div>
+                  <div class="phone text-white mt-2">
+                    <a href="tel:09638228220" class="text-white border-white"><i class="fa fa-phone"></i> 09638228220</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 d-flex align-items-center log-out">
+                <a href="index.html" class="btn text-white"><i class="fa fa-home" aria-hidden="true"></i> HOME</a>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

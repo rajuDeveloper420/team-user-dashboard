@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'Kalpurush';
+    src: url(fonts/Kalpurush.ttf);
+}
+body{
+    font-family: 'kalpurush';
+}
+p{
+    margin: 0%;
+}
+a{
+    text-decoration:none;
+}
+ul{
+    padding: 0%;
+}
+.header-box{
+    background: #F96537;
+    padding: 10px 0 0 0;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.header-box h3{
+    color: #fff;
+}
+
+.step-card{
+    width: 60%;
+    background:rgb(247, 247, 247); 
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+@media (max-width: 991.98px) {
+
+    .step-card{
+        width: 100%;
+         
+    }
+ }
+
+.pro-img img{
+    max-width: 120px;
+}
+.step-parr p{
+    font-size: 20px;
+}
+th,tr,td{
+    border: none;
+}
+.nid-img{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.front-img img,
+.back-img img{
+    max-width: 350px;
+    max-height: 220px;
+}
+.cash{
+    display: flex;
+    justify-content:center;
+}
+.balance h3{
+    font-size: 22px;
+}
+.pay-img{
+    border-bottom: 3px solid #E20F6B;
+}
+.bkash-bg{
+    background: #E20F6B;
+}
+.nagad-bg{
+    background-image: linear-gradient(to right, #e51017, #e83a11, #eb520d, #ed670c, #ee7910, #ee7910, #ee7910, #ee7910, #ed670c, #eb520d, #e83a11, #e51017);
+}
+.roket{
+    background: #8A288F;
+}
+.roket-img{
+    border-bottom: 3px solid #8A288F
+}
+.accordion-body li{
+    margin-top: 16px;
+    font-size: 20px;
+    
+}
+.accordion-body th{
+    display: inline-block;
+   padding-left: 20px; 
+
+  
+}
+.accordion-body td{
+   display: inline-block;
+   padding-left: 20px; 
+}
+.accordion-body {
+  background: #E7F1FF;
+}
+.accordion-body tr{
+  display: block;
+  border: bottom 1px solid #fff;
+}
+
+/* footer */
+.footer img{
+    width: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#user_id{
+    width: 100%;
+    margin:auto 0 ;
+}
+.user-container{
+    background: #F96537;
+    padding: 10px 150px;
+    margin-top: 5px;
+    border-bottom-left-radius: 50px ;
+    border-bottom-right-radius: 50px ;
+    
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile-img{
+    border-radius: 100%;
+    max-width: 120px;
+    max-height: 120px;
+}
+.profile-img a img{
+   width: 120px;
+    max-height: 120px;
+    border-radius: 100%;
+    border: 4px solid #fff;
+}
+.profile-text{
+    margin-left: 20px;
+    color: #fff;
+}
+.admin{
+    font-size: small;
+}
+.b-box{
+    display: flex;
+    justify-content: flex-end;
+}
+.balance-box{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/*************************
+    option section CSS
+ *************************/
+
+
+
+ /*  
+ #option{
+     padding-top: 50px;
+ }
+ .option{
+     padding: 0 150px;
+ }
+ .option-box{
+     text-align: center;
+ }
+ .option-box img{
+     width: 100px;
+     margin-bottom: 10px;
+ }
+ .option-box a{
+     color: #000;
+     font-weight: 700;
+     transition: all 0.2s ease;
+
+ }
+ .option-box a:hover{
+     color: #F96537;
+     transition: all 0.2s ease;
+ }
+
+ 
+ /* owl carousl css */
+
+ /*
+ .item img{
+     width: 100%;
+     max-height: 450px;
+ }
+ .owl-theme .owl-nav {
+    display: none;
+}
+ .owl-theme .owl-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 32px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #F96537;
+}
+.footer{
+    padding: 0 150px;
+    background: #F96537;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.footer a{
+    display: inline-block;
+}
+.footer img{
+    width: 50px;
+}
+.social{
+    margin-top: 30px;
+    text-align: center;
+}
+.social ul li{
+    display: inline-block;
+}
+.social ul li a:hover {
+    color: rgba(252, 252, 252, 0.642) !important;
+    transition: all .2s ease;
+}
+.social ul li a:hover i {
+    transition: all .2s ease;
+}
+.social ul li a{
+    color: #fff !important;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 24px;
+}
+.social ul li a i{
+    transition: all .4s ease;
+    display: inline-block;
+}
+
+*/
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

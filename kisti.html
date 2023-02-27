@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--font-awesome link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="step1.css">
+    <style>tr{
+      border:1px solid #8d8d9c;
+      margin-top: 10px;
+  } 
+  </style>
+
+    <title>কি‌স্তি প্রদান</title>
+  </head>
+  <body>
+    <header>
+        <div class="container header-box bg-danger">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>কি‌স্তি প্রদান</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="step">
+        <div class="container step-head py-5">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="step-card text-center">
+                      <div class="intatest mb-5">
+                          <div class="row">
+                            <div class="col-sm-4 mb-3">
+                              <div class="wrap bg-white py-3 rounded-2 shadow-lg">
+                                <img src="img/money-bag.png" alt="">
+                                <h5 class="mt-3">মোট সুদ ১০০০৳ </h5>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb-3">
+                              <div class="wrap bg-white py-3 rounded-2 shadow-lg">
+                                <img src="img/loan.png" alt="">
+                                <h5 class="mt-3">মোট ঋণ ১০০০৳ </h5>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="wrap bg-white py-3 rounded-2 shadow-lg">
+                                <img src="img/loan (1).png" alt="">
+                                <h5 class="mt-3">সর্ব মোট পাওনা ১০০০৳ </h5>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="balance mb-3">
+                        <h3 class="btn-outline-danger btn-lg btn">বর্তমান মোট ঋণ বা‌কি <br> 1000 ৳ </h3>
+                      </div>
+                      
+                      <div class="popup">
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header bg-danger text-white ">
+                                <h4 class="modal-title mx-auto " id="exampleModalToggleLabel">কত টাকা কি‌স্তি প‌রি‌শোধ করবেন    </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body py-5">
+                                <input type="text" class="form-control py-3 border-danger" placeholder="টাকার পরিমান দিন " aria-label="Username" required>
+                              </div>
+                              <div class="modal-footer mx-auto">
+                                <button type="submit" class="btn btn-lg bg-danger text-white" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">পরবর্তি </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header bg-danger text-white">
+                                <h4 class="modal-title " id="exampleModalToggleLabel2">পেমেন্ট সিস্টেম</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                
+                                
+                        
+                                
+                                <h5 class="text-dark">মোবাইল ব‌্যাং‌কিং</h5>
+                                <button class="btn btn-outline-danger mb-3" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="img/logo.png" alt=""></button>
+                              
+                               <button class="btn btn-outline-danger px-3 py-4" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="img/logo.a4624c6.svg" alt=""></button>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header ">
+                                <h4 class="modal-title text-danger mx-auto" id="exampleModalToggleLabel3">01xxx-xxxxxx নাম্বা‌রে xxx৳ সেন্ড মা‌নি করুন  </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body bg-danger text-white">
+                                <div class="pay-img pb-1 mb-3 bg-white">
+                                  <img src="img/bkash.jpg" alt="">
+                                </div>
+                                <form action="">
+                                  <label for="" class="fs-5 ">‌Enter the transection ID of your bkash SEND Money </label>
+                                <input type="text" class="form-control mt-3 py-3" placeholder="Enter bkash Transection ID" aria-label="Username" required>
+                                </form>
+                                <div class="list text-start ps-3">
+                                  <ul>
+                                    <li class="mt-2">Go to your bkash Menu by dialing: *247# </li>
+                                    <li class="mt-2">Choose "Send Money" </li>
+                                    <li class="mt-2">Enter the Merchant bkash Account Number <br> 01xxx-xxxxxx</li>
+                                    <li class="mt-2">Enter the Merchant bkash Account Number <br> 01xxx-xxxxxx</li>
+                                    <li class="mt-2">Enter the Amount: 750৳ </li>
+                                    <li class="mt-2">Enter bkash Mobile Menu PIN to confirm</li>
+                                    <li class="mt-2">You will receive a confirmation sms form bkash</li>
+                                    <li class="mt-2">Enter the Transection ID in the upper box and press "verify"</li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="modal-footer mx-auto">
+                                <button type="submit" class="btn btn-secondary btn-lg" data-bs-target="#exampleModalToggle5"  data-bs-toggle="modal" data-bs-dismiss="modal">VERIFY </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel6" tabindex="-1">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header ">
+                                <h4 class="modal-title text-danger mx-auto" id="exampleModalToggleLabel6">01xxx-xxxxxx নাম্বা‌রে xxx৳ সেন্ড মা‌নি করুন  </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body nagad-bg text-white">
+                                <div class="pay-img pb-1 mb-3 bg-white">
+                                  <img src="img/Nagad.png" alt="">
+                                </div>
+                                <form action="">
+                                  <label for="" class="fs-5 ">‌Enter the transection ID of your Nagad SEND Money </label>
+                                <input type="text" class="form-control mt-3 py-3" placeholder="Enter Nagad Transection ID" aria-label="Username" required>
+                                </form>
+                                <div class="list text-start ps-3">
+                                  <ul>
+                                    <li class="mt-2">Go to your Nagad Menu by dialing: *167# </li>
+                                    <li class="mt-2">Choose "Send Money" </li>
+                                    <li class="mt-2">Enter the Merchant Nagad Account Number <br> 01xxx-xxxxxx</li>
+                                    <li class="mt-2">Enter the Merchant Nagad Account Number <br> 01xxx-xxxxxx</li>
+                                    <li class="mt-2">Enter the Amount: 750৳ </li>
+                                    <li class="mt-2">Enter Nagad Mobile Menu PIN to confirm</li>
+                                    <li class="mt-2">You will receive a confirmation sms form Nagad</li>
+                                    <li class="mt-2">Enter the Transection ID in the upper box and press "verify"</li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="modal-footer mx-auto">
+                                <button type="submit" class="btn btn-secondary btn-lg" data-bs-target="#exampleModalToggle5"  data-bs-toggle="modal" data-bs-dismiss="modal">VERIFY </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel5" tabindex="-1">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header bg-danger text-white ">
+                                <h4 class="modal-title" id="exampleModalToggleLabel5">ধন্যবাদ </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <h5 class="text-dark">আপনার লেন‌ দেন অনু‌রোধ গ্রহন করা হল,কিছুক্ষ‌ণের ম‌ধ্যে পেমেন্ট বিষয় SMS পা‌বেন </h5>
+                              </div>
+                              <div class="modal-footer ">
+                                <a href="kisti.html"><button class="btn btn-lg bg-danger text-white" > সাবমিট  </button></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+  
+                        
+  
+                        
+                        
+                        <a class="btn btn-success shadow-lg px-4" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><i class="fa fa-address-card-o fa-3x" aria-hidden="true"></i><br> কি‌স্তি প‌রি‌শোধ  </a>  
+                      </div>
+                      <h3 class="text-danger mt-5"> Transaction History</h3>
+                      <div class="trans mt-5 mb-3">
+                        <div class="row fw-bold">
+                          <div class="col-3 col-sm-3 ">Date</div>
+                          <div class="col-2 col-sm-2 text-center">Amount</div>
+                          <div class="col-3 col-sm-2 text-center d-none d-sm-block">Type</div>
+                          <div class="col-4 col-sm-3 text-center">Number</div>
+                          <div class="col-3 col-sm-2 ">Status</div>
+                        </div>
+                      </div>
+                      <div class="trans bg-white mb-3 shadow-lg p-3 rounded">
+                        <div class="row fst-normal">
+                          <div class="col-3 col-sm-3">11:10 am 05/04/2022</div>
+                          <div class="col-2 col-sm-2 text-center">10000৳</div>
+                          <div class="col-3 col-sm-2 text-center d-none d-sm-block">By Nagad</div>
+                          <div class="col-4 col-sm-3 text-center">01234567890</div>
+                          <div class="col-3 col-sm-2 text-end text-success">Success</div>
+                        </div>
+                      </div>
+                      <div class="trans bg-white mb-3 shadow-lg p-3 rounded">
+                        <div class="row fst-normal">
+                          <div class="col-3 col-sm-3">11:10 am 05/04/2022</div>
+                          <div class="col-2 col-sm-2 text-center">10000৳</div>
+                          <div class="col-3 col-sm-2 text-center d-none d-sm-block">By Bkash</div>
+                          <div class="col-4 col-sm-3 text-center">01234567890</div>
+                          <div class="col-3 col-sm-2 text-end text-success">Success</div>
+                        </div>
+                      </div>
+
+
+                    
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer text-white">
+      <div class="container-lg footer bg-danger py-3 rounded-top">
+          <div class="row">
+              <div class="col-3 d-flex align-items-center">
+                  <a href="#" class="ps-3 w-25"><img src="img/dash_logo.jpg" alt=""></a>
+              </div>
+              <div class="col-5">
+                <div class="social">
+                  <div class="help text-white">
+                    <h4 class="d-inline">হেল্প লাইন</h4>
+                    <p class="d-inline">(১০:০০-০৮:০০)</p>
+                  </div>
+                  <div class="phone text-white mt-2">
+                    <a href="tel:09638228220" class="text-white border-white"><i class="fa fa-phone"></i> 09638228220</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 d-flex align-items-center log-out">
+                <a href="index.html" class="btn text-white"><i class="fa fa-home" aria-hidden="true"></i> HOME</a>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
